@@ -10,7 +10,7 @@ class LinkedListNode {
   }
 }
 
-class LinkedList {
+export class LinkedList {
   constructor() {
     this.head = null;
     this.tail = null;
@@ -141,7 +141,7 @@ class LinkedList {
 
       currentNode = currentNode.next;
     }
-    
+
     return null;
   }
 }
