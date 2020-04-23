@@ -6,6 +6,8 @@
 // Если значеним больше двигаем правую точку вниз до середины -1
 // Если значение не найдено  возвращаем -1
 
+// Olog(n) - сложность
+
 function binarySort(arr, num) {
     let start = 0;
     let end = arr.length - 1;
@@ -24,11 +26,7 @@ function binarySort(arr, num) {
         middle = Math.floor((start + end) / 2 );
     }
 
-    if (arr[middle] === num) {
-        return middle
-    }
-
-    return -1
+    return arr[middle] === num ? middle : -1;
 }
 
 console.log(binarySort([11,22,33,44,55,66,77,88,99], 77));
